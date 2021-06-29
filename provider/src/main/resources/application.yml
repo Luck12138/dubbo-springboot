@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: dubbo_auto_configuration_provider_demo
+dubbo:
+  application:
+    name: boot-user-service-provider  #服务的应用名
+  registry:
+    protocol: zookeeper     #协议名称
+    address: zookeeper://127.0.0.1:2181 #地址
+  protocol:
+    name: dubbo             #通信协议名称
+    port: 20880             #通信协议端口
+  scan:
+    base-packages: com.mooc.springboot.dubbo
+server:
+  port: 8081
+
+  ##spring项目名
+
+
+

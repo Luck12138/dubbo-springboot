@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: boot-user-service-consumer  #服务的应用名
+  registry:
+    address: zookeeper://127.0.0.1:2181 #地址
+    check: false
+    protocol: zookeeper
+  consumer:
+    check: false
+server:
+  port: 8082
